@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom"
 import Home from "./Pages/Home/Home";
-import WelcomePage from "./Pages/WelcomePage";
-import Notes from "./Pages/Notes";
+import WelcomePage from "./Pages/WelcomePage/WelcomePage";
+import Notes from "./Pages/Notes/Notes";
 import NotesDetails from "./Pages/Notes/NotesDetails";
-import Quotes from "./Pages/Quotes";
+import Quotes from "./Pages/Quotes/Quotes";
 import MusicPage from "./Pages/MusicPage/MusicPage";
 const router = createBrowserRouter([
     {
@@ -15,22 +15,22 @@ const router = createBrowserRouter([
         element:<Home/>,
         children:[
             {
-                path:"/notes",
+                path:"/Home/notes",
                 element:<Notes/>,
                 children:[
                     {
-                        path:"/notesDetails",
+                        path:"/Home/notes/notesDetails",
                         element:<NotesDetails/>,
                     }
                 ]
             },
 
             {
-                path:"/quotes",
+                path:"/Home/quotes",
                 element:<Quotes/>,
             },
             {
-                path:"/musicPage",
+                path:"/Home/musicPage",
                 element:<MusicPage/>,
             },
         ]

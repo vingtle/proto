@@ -18,13 +18,13 @@ const router = createBrowserRouter([
             {
                 path:"/Home/notes",
                 element:<Notes/>,
-                children:[
-                    {
-                        path:"/Home/notes/notesDetails",
-                        element:<NotesDetails/>,
-                    }
-                ]
             },
+                    {
+                        path:"/Home/notes/notesDetails/:id/:type",
+                        element:<NotesDetails/>,
+                    },
+           
+           
 
             {
                 path:"/Home/quotes",

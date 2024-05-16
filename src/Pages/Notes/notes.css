@@ -1,3 +1,28 @@
-@media screen and (max-width:500px){
-    
+@media screen and (max-width: 500px) {
+  #notes {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  #notes .userName {
+    display: none;
+  }
+  .Category-Container {
+    gap: 10px;
+    height: 76vh;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-color: rgba(0, 0, 0, 0.072) transparent;
+    padding: 20px;
+  }
 }

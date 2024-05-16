@@ -1,18 +1,22 @@
 @media screen and (max-width:500px) {
     #logo{
-        width:40px ;
-        height:40px ;
-        margin: 20px auto;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
+        height: 80px;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        
     }
 
     .logo-yin{
         font-size: 50px;
-        opacity: 0.7;
+        opacity: 1;
         animation: rotate 4s alternate forwards infinite;
+        color: white;
+        filter: drop-shadow(0 0 10px black)
     }
 
     @keyframes rotate {

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaYinYang } from "react-icons/fa";
 import "./Logo.css"
 

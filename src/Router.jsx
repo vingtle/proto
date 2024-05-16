@@ -5,6 +5,7 @@ import Notes from "./Pages/Notes/Notes";
 import NotesDetails from "./Pages/Notes/NotesDetails";
 import Quotes from "./Pages/Quotes/Quotes";
 import MusicPage from "./Pages/MusicPage/MusicPage";
+import HomePage from "./Pages/HomePage/Homepage";
 const router = createBrowserRouter([
     {
         path:"/",
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             {
                 path:"/Home/musicPage",
                 element:<MusicPage/>,
+            },
+            {
+                path:"/Home/homePage",
+                element:<HomePage/>,
             },
         ]
     }

@@ -1,5 +1,29 @@
 @media screen and (max-width:500px) {
     #navbar{
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        padding: 0px;
+        width: 100vw;
+        position:fixed;
+        bottom: 0;
+        z-index: 1000;
+
         
+    }
+    #navbar div{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    #navbar div .btn{
+        font-size: 30px;
     }
 }

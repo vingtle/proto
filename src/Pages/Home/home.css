@@ -1,3 +1,6 @@
 @media screen and (max-width:500px){
+    #id{
+        width: 100%;
+    }
     
 }

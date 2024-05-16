@@ -7,8 +7,8 @@ import "./home.css"
 
 const Home = () => {
   return (
-    <div>
-      <Logo/>
+    <div id="home">
+      {/* <Logo/> */}
       <Outlet/>
       <MusicPlayer/>
       <NavBar/>

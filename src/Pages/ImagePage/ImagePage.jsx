@@ -18,6 +18,7 @@ const ImagePage = () => {
             console.log('Previous button clicked');
           };
         
+          // eslint-disable-next-line no-unused-vars
           const handleNext = () => {
                console.log('Next button clicked');
   return (
@@ -52,5 +53,4 @@ const ImagePage = () => {
     </div>
   );}
 }
-
 export default ImagePage;

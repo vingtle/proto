@@ -5,6 +5,8 @@ import Notes from "./Pages/Notes/Notes";
 import NotesDetails from "./Pages/Notes/NotesDetails";
 import Quotes from "./Pages/Quotes/Quotes";
 import MusicPage from "./Pages/MusicPage/MusicPage";
+import ImagePage from "./Pages/ImagePage/ImagePage.jsx";
+
 const router = createBrowserRouter([
     {
         path:"/",
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
                 path:"/Home/musicPage",
                 element:<MusicPage/>,
             },
+            {
+                path:"/Home/imagePage",
+                element:<ImagePage/>,
+            }
         ]
     }
  ])

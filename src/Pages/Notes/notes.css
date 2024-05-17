@@ -8,9 +8,7 @@
     align-items: center;
     width: 100vw;
 
-    /* input[type="text"] {
-      color:white;
-    } */
+    
   }
   #notes .userName {
     display: none;

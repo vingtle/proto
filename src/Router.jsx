@@ -5,42 +5,36 @@ import Notes from "./Pages/Notes/Notes";
 import NotesDetails from "./Pages/Notes/NotesDetails";
 import Quotes from "./Pages/Quotes/Quotes";
 import MusicPage from "./Pages/MusicPage/MusicPage";
-import ImagePage from "./Pages/ImagePage/ImagePage.jsx";
-
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <WelcomePage />,
-  },
-  {
-    path: "/Home",
-    element: <Home />,
-    children: [
-      {
-        path: "/Home/notes",
-        element: <Notes />,
-        children: [
-          {
-            path: "/Home/notes/notesDetails",
-            element: <NotesDetails />,
-          },
-        ],
-      },
+    {
+        path:"/",
+        element:<WelcomePage/>
+    },
+    {
+        path:"/Home",
+        element:<Home/>,
+        children:[
+            {
+                path:"/Home/notes",
+                element:<Notes/>,
+                children:[
+                    {
+                        path:"/Home/notes/notesDetails",
+                        element:<NotesDetails/>,
+                    }
+                ]
+            },
 
-      {
-        path: "/Home/quotes",
-        element: <Quotes />,
-      },
-      {
-        path: "/Home/musicPage",
-        element: <MusicPage />,
-      },
-      {
-        path: "Home/imagePage",
-        element: <ImagePage />,
-      },
-    ],
-  },
-]);
+            {
+                path:"/Home/quotes",
+                element:<Quotes/>,
+            },
+            {
+                path:"/Home/musicPage",
+                element:<MusicPage/>,
+            },
+        ]
+    }
+ ])
 
-export default router;
+ export default router

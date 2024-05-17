@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Input } from "../../components/Input/Input";
 import { CategorieList } from "../../components/CategorieList/CategorieList";
+import notevideo from "../../assets/noteVideo.mp4"
 import "./notes.css"
 
 const Notes = () => {
@@ -42,6 +43,13 @@ const Notes = () => {
 
 
   return (
+    <div>
+  <div className="video-container">
+    <video muted loop autoPlay>
+      <source src={notevideo} type="video/mp4"></source>
+    </video>
+  </div>
+
     <div id="notes">
     <p className="userName">hello{""}! I hope you're enjoying!</p>
     <Input
@@ -62,7 +70,7 @@ const Notes = () => {
     </div>
   </div>
 
-
+  </div>
   )
 }
 

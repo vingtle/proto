@@ -10,6 +10,7 @@
     overflow: hidden;
     border-radius: 10px;
     width: 95vw;
+    animation: movesOppo 1s ease-in-out alternate forwards;
 }
 
 #input .btn{

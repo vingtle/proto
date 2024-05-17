@@ -9,8 +9,8 @@
     border-radius: 10px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.671);
-  
-   
+    color: white;
+    animation: movesbx 1s ease-in-out alternate forwards;
     transition: all 0.5s ease-in-out;   
 }
 #catBox:hover{
@@ -91,6 +91,7 @@
         font-weight: 600;
         text-align: center;
         height: 80px;
+        font-size: 22px;
     }
 
     
